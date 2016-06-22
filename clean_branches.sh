@@ -3,10 +3,10 @@
 # @date 2016.06.22
 
 # Step 1: Navigate to master branch
-git checkout dev
+git checkout master
 
 # Step 2: Get a list of branches that are NOT master
-branches=( $(git branch | grep -v 'dev' | grep -v '\*' | awk '{print $1}') )
+branches=( $(git branch | grep -v 'master' | grep -v '\*' | awk '{print $1}') )
 
 # Step 3: Determine if there are any branches we need to process
 branchCount=${#branches[@]}
