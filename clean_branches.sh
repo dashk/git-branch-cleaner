@@ -48,9 +48,8 @@ else
 
                 # Step 4.1 Delete branch per user request
                 if [[ $userInput == "Y" || $userInput == "y" ]]; then
-                        echo "Pretending to delete $branch"
-                        #git branch -D $branch
-                        #echo "Branch $branch deleted\r\n"
+                        git branch -D $branch
+                        echo "Branch $branch deleted\r\n"
                 fi
         done
 fi
